@@ -1,0 +1,28 @@
+MongoDB Compass
+    Filter
+        { status: "A" } => ghadi ijib liya les status li 3andhom A
+        { status: { $in: [ "A", "D" ] } } => ghadi ijib les status li3andhom A et D
+        { status: "A", qty: { $lt: 30 } } => ghadi ijib tous les status li3andhom A et quantity sghar men 25
+        { status: "A", qty: { $lte: 30 } } => ghadi ijib tous les status li3andhom A et quantity kbar men 25
+        { $or: [ { status: "A" }, { qty: { $lt: 30 } } ] } => ghadi ijib les status li3andhom A Ou quantity sghar men 30
+        {"age": {"$gte": 21, "$lt": 70}} => Recherchez tous les documents dont le champ d'âge a une valeur> = 21 et <70.
+        
+quit() => pour quiter monogo        
+
+Show database => show dbs
+create and switch database => use mydb
+show database => db
+
+// C O L L E C T I O N S
+create collections => db.createCollection("nameCollection")
+delete collections => db.nameCollection.drop()
+show collections => show collections
+
+show value table => db.nameCollection.find()
+insert value tables => db.nameCollection.insert({"name": "yassine", "age": 23 })
+
+
+// all operator mongodb
+    // Comparison Query Operators ($eq, $in, 
+    L'expression $eq est équivalente ==>> db.nameCollection.find( { qty: { $eq: 20 }})
+    L'expression $in est contient ==>> db.nameCollection.find( { qty: { $in: [20, 30, 90]}})

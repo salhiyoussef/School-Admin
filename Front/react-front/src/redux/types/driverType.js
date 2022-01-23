@@ -1,0 +1,6 @@
+export const GET_DRIVER_DATA = "GET_DRIVER_DATA";
+export const SET_PAGINATE = "SET_PAGINATE";
+export const DELETE_DRIVER = "DELETE_DRIVER";
+export const POST_DRIVER = "POST_DRIVER";
+export const PUT_DRIVER = "PUT_DRIVER";
+export const SEARCH_DRIVER = "SEARCH_DRIVER"

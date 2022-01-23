@@ -1,0 +1,6 @@
+Footer {
+    background-image: linear-gradient(-225deg, #01c0c8 0%, #6B8DD6 48%, #8E37D7 100%) !important;
+    /* background-image: linear-gradient(-225deg, #05b2d9 0%, #d56d7d 48%, #ff404d 100%); */
+    z-index: 99;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
